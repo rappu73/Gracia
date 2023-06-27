@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Акции{% endblock %}
+{% block content %}
+
+<main>
+    <div class="container mt-3">
+        <div class="text-white mb-3 text-center pt-2 pb-2" style="background-color: #7bd8a3">
+            <h1 class="text-center"><b>Акции</b></h1>
+        </div>
+        {% for el in tasks %}
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-auto">
+                <div class="card" style="width: auto; max-width: 600px;">
+                    <img class="card-img-top" src="{{ el.img.url }}" alt="Card image cap">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+
+{% endblock %}
+

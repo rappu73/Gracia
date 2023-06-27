@@ -1,0 +1,74 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Массаж{% endblock %}
+{% block content %}
+
+<main>
+    <div class="container mt-5">
+        <div class="text-white mb-3 text-center pt-2 pb-2" style="background-color: #7bd8a3">
+            <h2 class="text-center"><b>Массаж</b></h2>
+        </div>
+
+        {% for el in mass %}
+        <h5 class="card-title text-center">{{ el.title }}</h5>
+        <div class="card mb-4 text-center mx-auto" style="max-width: 700px;">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-sm">
+                                <p class="mt-2" style="background-color: #FFFFFF">1 сеанс:&nbsp &nbsp <b>{{ el.price1 }} руб.</b></p>
+                            </div>
+                            <div class="col-sm">
+                                <p class="mt-2" style="background-color: #FFFFFF">5 сеансов:&nbsp &nbsp <b>{{ el.price5 }} руб.</b></p>
+                            </div>
+                            <div class="col-sm">
+                                <p class="mt-2" style="background-color: #FFFFFF">10 сеансов:&nbsp &nbsp <b>{{ el.price10 }} руб.</b></p>
+                            </div>
+                        </div>
+                        <div class="dropdown show">
+                             <a class="btn dropdown-toggle mb-2 text-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #7bd8a3">
+                                Описание
+                            </a>
+                            <div class="dropdown-menu" style="max-width: 600px;">
+
+
+                                <pre class="text-justify pt-2 pl-2 pr-2 pb-2" style="white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: 'Source Sans Pro', sans-serif;">{{ el.task }}</pre>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="row mt-5">
+            <div class="col-lg-4 mx-auto mb-2">
+                <img src="{% static 'img/massaj1.jpg' %}" class="bd-placeholder-img img-fluid" width=100% height="200"
+                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                </svg>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 mx-auto mb-2">
+                <img src="{% static 'img/massaj2.jpg' %}" class="bd-placeholder-img img-fluid" width=100% height="200"
+                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                </svg>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 mx-auto mb-2">
+                <img src="{% static 'img/massaj3.jpg' %}" class="bd-placeholder-img img-fluid" width=100% height="200"
+                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                </svg>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+        <!-- /END THE FEATURETTES -->
+    </div>
+</main>
+
+{% endblock %}
+<!--{% include 'main/modal-product.html' %}-->

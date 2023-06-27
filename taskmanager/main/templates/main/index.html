@@ -1,0 +1,83 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Главная страница{% endblock %}
+{% block content %}
+
+<main>
+    <div class="container mt-3">
+        <img src="{% static 'img/title-img.jpg' %}" class="bd-placeholder-img img-fluid" width=100% height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+        <div class="mb-3 text-center pt-2 pb-2 mt-3" style="background-color: #7bd8a3">
+            <h2 class="text-center text-white"><b>Наши Услуги</b></h2>
+        </div>
+
+    <!-- START THE FEATURETTES -->
+
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2 align-self-center text-sm-start" style="text-align: justify">
+                <h1 class="featurette-heading fw-normal lh-1 text-center">Аппаратные процедуры</h1>
+                <h6 style="text-indent: 20px;">Плавные формы и сногсшибательные изгибы — мечта большинства современных женщин. Однако не каждая девушка похвастается идеальной фигурой. Поэтому ученые при совместной работе со специалистами в областях здравоохранения и услуг красоты разработали всевозможные способы коррекции фигуры. Во время таких сеансов воздействие на тело человека производится механическими, аппаратными, фитотерапевтическими и иными процедурами.</h6>
+
+                    <h6 style="text-indent: 20px;">Использование комплексного подхода или же посещение курса из нескольких процедур может помочь добиться заметных результатов, а также закрепить полученные достижения. Благодаря этому вам представится шанс скорректировать объемы, избавиться от лишних жировых отложений в проблемных зонах, сделать кожу гладкой и нежной, приобрести ровный рельеф на ее поверхности.</h6>
+
+                        <h6 style="text-indent: 20px;">Это поможет всегда и везде чувствовать себя уверенно, каждый день радоваться собственному отражению в зеркале, покорять окружающих красотой и изящными формами.</h6>
+                        <p class="text-center"><a class="btn text-white" style="margin-top: 10px; background-color: #7bd8a3" href="/apparat">Подробнее »</a></p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="{% static 'img/korrekcia-talii_img.jpg' %}" class="bd-placeholder-img img-fluid shadow p-3 mb-5 bg-white rounded" width=100% height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 align-self-center" style="text-align: justify">
+                <h1 class="featurette-heading fw-normal lh-1 text-center">Комплексные програмы коррекции фигуры</h1>
+                <h6 style="text-indent: 20px;">Комплексные программы на основе аппаратных и ручных методик коррекции фигуры - наиболее эффективное решение для придания тонуса коже, быстрого уменьшения объемов и формирования красивого силуэта.</h6>
+
+                    <h6 style="text-indent: 20px;">Комплексное воздействие аппаратных методик со специальными косметическими средствами направленного действия позволяет получить более стойкий и выраженный результат, а именно: уменьшение объемов тела, укрепление мышц, уменьшение проявления целлюлита, уменьшение отечности, улучшение тонуса и качества кожи.</h6>
+
+                        <p class="text-center"><a class="btn text-white" style="margin-top: 10px; background-color: #7bd8a3" href="/complex">Подробнее »</a></p>
+            </div>
+            <div class="col-md-5">
+                <img src="{% static 'img/045_large_img.jpg' %}" class="bd-placeholder-img img-fluid shadow p-3 mb-5 bg-white rounded" width=100% height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2 align-self-center text-sm-start" style="text-align: justify">
+                <h1 class="featurette-heading fw-normal lh-1 text-center">Массаж</h1>
+                <div class="col-lg-12 mx-auto">
+                    <p class="" style="text-indent: 20px;">Даже один сеанс массажа может помочь устранить мышечные боли, снять спазмы, улучшить кровообращение. Мануальное воздействие может положительно влиять на самочувствие в целом, а также помогает справиться с локальными проблемами, улучшить кровообращение, укрепить иммунитет, а при необходимости поможет скорректировать отдельные недостатки фигуры.</p>
+
+                        <h6 style="text-indent: 20px;">Явный эффект заметен после прохождения курса из нескольких процедур, что содействует избавлению от многочисленных проблем со здоровьем и закреплению полученного результата.</h6>
+                </div><!-- /.col-lg-4 -->
+                <p class="text-center"><a class="btn text-white" style="margin-top: 10px; background-color: #7bd8a3" href="/massaje">Подробнее »</a></p>
+            </div>
+            <div class="col-md-5">
+                <img src="{% static 'img/55556_img.jpg' %}" class="bd-placeholder-img img-fluid shadow p-3 mb-5 bg-white rounded" width=100% height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row mt-4">
+
+            <div class="col-lg-4 mx-auto mb-1">
+                <img src="{% static 'img/apparat5.jpg' %}" class="bd-placeholder-img img-fluid" width=100% height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4 mx-auto mb-1">
+                <img src="{% static 'img/massaj4.jpg' %}" class="bd-placeholder-img img-fluid" width=100% height=100% xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 mx-auto mb-1">
+                <img src="{% static 'img/5657575.jpg' %}" class="bd-placeholder-img img-fluid" width=100% height=100% xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    <!-- /END THE FEATURETTES -->
+    </div>
+  </main>
+
+{% endblock %}
+
+
+
+
